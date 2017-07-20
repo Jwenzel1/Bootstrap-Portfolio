@@ -1,15 +1,55 @@
 html{
   font-size: 16px;
+  font-family: serif;
+  position: relative;
+  min-height: 100%;
 }
 
 body{
   background-image: url("../images/concrete_seamless.png");
+  margin-bottom: 60px;
+}
+
+h1, h2{
+  font-weight: bold;
 }
 
 h1{
   padding: 0px;
   margin: 0px;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+h2{
+  padding: 20px 0px;
+  color: #4aaaa5;
+  margin: 0px 0px 20px 0px;
+}
+
+p{
+  margin-bottom: 0px;
+}
+
+img{
+  height: 60px;
+  width: 60px;
+}
+
+#me{
+  float: left;
+  width: 170px;
+  height: 170px;
+  margin: 0px 10px 5px 0px;
+}
+
+.contentContainer{
+  padding: 0px 20px 20px 20px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.container-fluid{
+  padding: 0px;
 }
 
 .bottom-border{
@@ -19,18 +59,48 @@ h1{
 .navbar{
   background-color: white;
   padding: 0px 8%;
+  border-radius: 0px;
+  margin-bottom: 50px;
 }
 
 .navbar-header, .nav-pills>li.active>a{
   background-color: #4aaaa5;
 }
 
-.navbar-brand{
-  color: white;
-  font-size: 1.5rem;
+.navbar>.container-fluid .navbar-brand{
   margin: 0px;
 }
 
-.container{
-  max-width: 980px;
+.navbar-brand{
+  color: white;
+  font-size: 2rem;
+  margin: 0px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.border{
+  border: 1px solid black;
+}
+
+.row > div{
+  background-color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #bcc4c3;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #666;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 5px solid #4aaaa5;
+  padding-top: 10px;
+}
+
+.col-sm-3 > h2{
+  text-align: center;
 }
