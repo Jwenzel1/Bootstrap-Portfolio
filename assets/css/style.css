@@ -1,148 +1,145 @@
-html{
-  font-size: 16px;
-  font-family: serif;
+html {
   position: relative;
   min-height: 100%;
+  font-size: 16px;
 }
 
-body{
-  background-image: url("../images/concrete_seamless.png");
+body {
+  /* Margin bottom by footer height */
   margin-bottom: 60px;
-}
-
-h1, h2{
-  font-weight: bold;
-}
-
-h1{
-  padding: 0px;
-  margin: 0px;
-  font-size: 2rem;
-}
-
-h2{
-  padding: 20px 0px;
-  color: #4aaaa5;
-  margin: 0px 0px 20px 0px;
-}
-
-p{
-  margin-bottom: 0px;
-}
-
-img{
-  height: 60px;
-  width: 60px;
+  background-image: url("../images/concrete_seamless.png")
 }
 
 input{
-  width: 100%
+  width: 100%;
 }
 
 textarea{
   width: 100%;
 }
 
-#me{
-  float: left;
-  width: 305px;
-  height: auto;
-  margin: 0px 10px 5px 0px;
-  overflow: auto;
-}
-
-.submit{
-  padding: 20px;
-  background-color: #4aaaa5;
-  display: inline-block;
-  color: white;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-
-.contentContainer{
-  padding: 0px 20px 20px 20px;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-}
-
-.container-fluid{
-  padding: 0px;
-}
-
-.bottom-border{
-  border: 0px;
-  border-bottom: 1px solid gray;
-}
-.navbar{
-  background-color: white;
-  padding: 0px 8%;
-  border-radius: 0px;
-  margin-bottom: 50px;
-}
-
-.navbar-header, .nav-pills>li.active>a{
-  background-color: #4aaaa5;
-}
-
-.navbar>.container-fluid .navbar-brand{
-  margin: 0px;
-}
-
-.navbar-brand{
-  color: white;
-  font-size: 2rem;
-  margin: 0px;
-  padding: 15px;
+.contentHeader{
+  color: #4aaaa5;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.border{
-  border: 1px solid black;
+.navbarPadding{
+  padding: 0px 60px;
 }
 
-.row > div{
+.navbar-default{
   background-color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    background-color: #4aaaa5;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+    background-color: #4aaaa5;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #4aaaa5;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: #bcc4c3;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #666;
-  text-align: center;
-  vertical-align: middle;
-  border-top: 5px solid #4aaaa5;
-  padding-top: 10px;
+  color: white;
+  border-top: 10px solid #4aaaa5;
 }
 
-.col-sm-3 > h2{
-  text-align: center;
+.footer p{
+  color: white;
 }
 
-.portfolioItem{
-  position: relative;
+.centerFooterContents{
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
 }
 
-.portfolioItem img{
-  width: 300px;
-  height: auto;
+.border{
+  border: 1px solid black;
+  background-color: white;
+}
+
+.bottom-margin{
   margin-bottom: 20px;
 }
 
-.portfolioItem span{
-  width: 300px;
+.socialMediaImg{
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.portfolioImg{
+  width: 200px;
+}
+
+.portfolioImgTitle{
   background-color: #4aaaa5;
-  display:block;
+  padding: 3px 0px;
+  width: 200px;
+  margin: 0px auto;
   text-align: center;
   color: white;
-  padding: 10px 0px;
-  top: 145px;
-  position: absolute;
-  font-size: 2rem;
+  bottom: 60px;
+  position: relative;
+
+}
+
+hr{
+  border-color: black;
+}
+
+#aboutMeImg{
+  width: 200px;
+  margin: 5px 10px 0px 0px;
+  padding-bottom: 5px;
+}
+
+.submit{
+  padding: 10px 20px;
+  background-color: #4aaaa5;
+  display: inline-block;
+  margin: 10px 0px;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px){
+  #aboutMeImg{
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  #aboutMeImg{
+    width: 200px;
+    margin: 5px 10px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  #aboutMeImg{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .navbarPadding{
+    padding: 0px;
+  }
 }
